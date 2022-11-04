@@ -31,176 +31,95 @@
         content: '→';
         color: black;
     }
+    .slick-slide img {
+    display: inline-block;
+}
 </style>
 
 <body>
-    <header>
-        <div class="nav" id="nav">
-            <div class="hotline">
-                <p>HOTLINE TƯ VẤN: 0338711***</p>
-            </div>
-            <div class="header-icon">
-                <img src="./img/mainlogo.png">
-            </div>
-            <ul>
-                <li>TÀI KHOẢN</li>
-                <li>GIỎ HÀNG <i class="fa-sharp fa-solid fa-bag-shopping"></i></li>
-                <li><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
+    <div class="container">
+        <header>
+            <div class="nav" id="nav">
+                <div class="hotline">
+                    <p>HOTLINE TƯ VẤN: 0338711***</p>
+                </div>
+                <div class="header-icon">
+                    <img src="./img/mainlogo.png">
+                </div>
+                <ul>
+                    <li><p>TÀI KHOẢN</p></li>
+                    <li><p>GIỎ HÀNG <i class="fa-sharp fa-solid fa-bag-shopping"></p></i></li>
+                    <li><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
 
+                </ul>
+            </div>
+        </header>
+        <div class="sub-header">
+            <ul class="sub-nav">
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">BÀN PHÍM</a></li>
+                <li><a href="">KEYCAP</a></li>
+                <li><a href="">SẢN PHẨM</a></li>
+                <li><a href="">COMBO</a></li>
+                <li><a href="">ABOUT US</a></li>
             </ul>
         </div>
-    </header>
-    <div class="sub-header">
-        <ul class="sub-nav">
-            <li><a href="">TRANG CHỦ</a></li>
-            <li><a href="">BÀN PHÍM</a></li>
-            <li><a href="">KEYCAP</a></li>
-            <li><a href="">SẢN PHẨM</a></li>
-            <li><a href="">COMBO</a></li>
-            <li><a href="">ABOUT US</a></li>
-        </ul>
-    </div>
-    <div id=slider onclick="changeImage()">
-        <a href="https://shopee.vn/" target="_blank"><img id="sliders" src="./img/slider1.png"></a>
-    </div>
-    <!--  -->
-    <div class="item new-product">
-        <div class="titles">
-            <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px ;">SẢN PHẨM </p>
-            <h2 style="display:inline-block;  font-size:35px;">&nbspMỚI</h2>
+        <div id=slider onclick="changeImage()">
+            <a href="https://shopee.vn/" target="_blank"><img id="sliders" src="./img/slider1.png"></a>
         </div>
-        <div class="list">
-            <div class="itemImg">
-                <img src="./img/new1-1.png" alt="">
-                <div class="content">
-                    <h4>BÀN PHÍM CƠ</h4>
-                    <h3>BÀN PHÍM CUSTOM GAS67</h3>
-                    <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
+        <!--  -->
+        <div class="item new-product">
+            <div class="titles">
+                <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px ;">SẢN PHẨM
+                </p>
+                <h2 style="display:inline-block;  font-size:35px;">&nbspMỚI</h2>
+            </div>
+            <div class="list">
+                <div class="itemImg">
+                    <img src="./img/new1-1.png" alt="">
+                    <div class="content">
+                        <h4>BÀN PHÍM CƠ</h4>
+                        <h3>BÀN PHÍM CUSTOM GAS67</h3>
+                        <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <img src="./img/new2-1.png" alt="">
+                    <div class="content">
+                        <h4>COMBO</h4>
+                        <h3>[PRE-ORDER]BÀN PHÍM CƠ</h3>
+                        <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <img src="./img/new3-1.png" alt="">
+                    <div class="content">
+                        <h4>KIT</h4>
+                        <h3>BỘ KIT TÙY CHỈNH</h3>
+                        <P class="btn js-buy-ticket">1.370.000&#8363 <del>1.390.000&#8363</del></p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <a href=""><img src="./img/new4-1.png" alt=""></a>
+                    <div class="content">
+                        <h4>BÀN PHÍM CUSTOM</h4>
+                        <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
+                        <P class="btn js-buy-ticket">2.399.000&#8363</p>
+                    </div>
                 </div>
             </div>
-            <div class="itemImg">
-                <img src="./img/new2-1.png" alt="">
-                <div class="content">
-                    <h4>COMBO</h4>
-                    <h3>[PRE-ORDER]BÀN PHÍM CƠ</h3>
-                    <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
+            <div class="showItemNew">
+                <div class="showAllNew">
+                    <p>XEM TẤT CẢ . SẢN PHẨM MỚI</p>
                 </div>
-            </div>
-            <div class="itemImg">
-                <img src="./img/new3-1.png" alt="">
-                <div class="content">
-                    <h4>KIT</h4>
-                    <h3>BỘ KIT TÙY CHỈNH</h3>
-                    <P class="btn js-buy-ticket">1.370.000&#8363 <del>1.390.000&#8363</del></p>
-                </div>
-            </div>
-            <div class="itemImg">
-                <a href=""><img src="./img/new4-1.png" alt=""></a>
-                <div class="content">
-                    <h4>BÀN PHÍM CUSTOM</h4>
-                    <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
-                    <P class="btn js-buy-ticket">2.399.000&#8363</p>
-                </div>
-            </div>
-        </div>
-        <div class="showItemNew">
-            <div class="showAllNew">
-                <p>XEM TẤT CẢ . SẢN PHẨM MỚI</p>
-            </div>
 
-        </div>
-    </div>
-    <!--  -->
-    <div class="item new-product ">
-        <div class="titles">
-            <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px ;">BÀN PHÍM </p>
-            <h2 style="display:inline-block;  font-size:35px;">&nbspCUSTOM</h2>
-        </div>
-        <div class="list multiple-items">
-            <div class="itemImg">
-                <img src="./img/new1-1.png" alt="">
-                <div class="content">
-                    <h4>BÀN PHÍM CƠ</h4>
-                    <h3>BÀN PHÍM CUSTOM GAS67</h3>
-                    <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
-                </div>
-            </div>
-            <div class="itemImg">
-                <img src="./img/new2-1.png" alt="">
-                <div class="content">
-                    <h4>COMBO</h4>
-                    <h3>[PRE-ORDER]BÀN PHÍM CƠ</h3>
-                    <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
-                </div>
-            </div>
-            <div class="itemImg">
-                <img src="./img/new3-1.png" alt="">
-                <div class="content">
-                    <h4>KIT</h4>
-                    <h3>BỘ KIT TÙY CHỈNH</h3>
-                    <P class="btn js-buy-ticket">1.370.000&#8363 <del>1.390.000&#8363</del></p>
-                </div>
-            </div>
-            <div class="itemImg">
-                <a href=""><img src="./img/new4-1.png" alt=""></a>
-                <div class="content">
-                    <h4>BÀN PHÍM CUSTOM</h4>
-                    <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
-                    <P class="btn js-buy-ticket">2.399.000&#8363</p>
-                </div>
-            </div>
-            <div class="itemImg">
-                <a href=""><img src="./img/new4-1.png" alt=""></a>
-                <div class="content">
-                    <h4>BÀN PHÍM CUSTOM</h4>
-                    <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
-                    <P class="btn js-buy-ticket">2.399.000&#8363</p>
-                </div>
-            </div>
-            <div class="itemImg">
-                <a href=""><img src="./img/new4-1.png" alt=""></a>
-                <div class="content">
-                    <h4>BÀN PHÍM CUSTOM</h4>
-                    <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
-                    <P class="btn js-buy-ticket">2.399.000&#8363</p>
-                </div>
             </div>
         </div>
-        <div class="showItemNew">
-            <div class="showAllNew">
-                <p>XEM TẤT CẢ . BÀN PHÍM CUSTOM</p>
-            </div>
-
-        </div>
-    </div>
-    <!--  -->
-    <div class="hightLight">
-        <div class="titles">
-            <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px;font-weight: 500;color: rgb(141, 118, 17);">BỘ SƯU TẬP</p>
-            <h2 style="display:inline-block;  font-size:35px;color: rgb(247, 205, 67);font-weight: 500;">&nbspĐẶC BIỆT</h2>
-        </div>
-        <div class="hightlightItem">
-            <a href=""><img src="./img/kbspecial.jpg" alt=""></a>
-            <div class="content">
-                <h4>KIT BÀN PHÍM</h4>
-                <h3>[ORDER] MR.SUIT GOLDEN </h3>
-                <P class="btn js-buy-ticket">30.000.000&#8363</p>
-            </div>
-        </div>
-       
-        <div class="hightlightItem">
-            <a href=""><img src="./img/special.png" alt=""></a>
-            <div class="content">
-                <h4>BÀN PHÍM CUSTOM</h4>
-                <h3>MR.SUIT x GMK TIRAMISU</h3>
-                <P class="btn js-buy-ticket">20.899.000&#8363</p>
-            </div>
-        </div>
-    </div>
         <!--  -->
         <div class="item new-product ">
             <div class="titles">
-                <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px ;">BÀN PHÍM </p>
+                <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px ;">BÀN PHÍM
+                </p>
                 <h2 style="display:inline-block;  font-size:35px;">&nbspCUSTOM</h2>
             </div>
             <div class="list multiple-items">
@@ -257,26 +176,118 @@
                 <div class="showAllNew">
                     <p>XEM TẤT CẢ . BÀN PHÍM CUSTOM</p>
                 </div>
-    
+
             </div>
         </div>
         <!--  -->
+        <div class="hightLight">
+            <div class="titles">
+                <p class="showtop delay-02"
+                    style="display:inline-block;font-size:35px;padding-bottom:25px;font-weight: 500;color: rgb(141, 118, 17);">
+                    BỘ SƯU TẬP</p>
+                <h2 style="display:inline-block;  font-size:35px;color: rgb(247, 205, 67);font-weight: 500;">&nbspĐẶC
+                    BIỆT</h2>
+            </div>
+            <div class="hightlightItem">
+                <a href=""><img src="./img/kbspecial.jpg" alt=""></a>
+                <div class="content">
+                    <h4>KIT BÀN PHÍM</h4>
+                    <h3>[ORDER] MR.SUIT GOLDEN </h3>
+                    <P class="btn js-buy-ticket">30.000.000&#8363</p>
+                </div>
+            </div>
 
-        <script src="main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
-            integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1
-            });
-        </script>
+            <div class="hightlightItem">
+                <a href=""><img src="./img/special.png" alt=""></a>
+                <div class="content">
+                    <h4>BÀN PHÍM CUSTOM</h4>
+                    <h3>MR.SUIT x GMK TIRAMISU</h3>
+                    <P class="btn js-buy-ticket">20.899.000&#8363</p>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="item new-product ">
+            <div class="titles">
+                <p class="showtop delay-02" style="display:inline-block;font-size:35px;padding-bottom:25px ;">BÀN PHÍM
+                </p>
+                <h2 style="display:inline-block;  font-size:35px;">&nbspCUSTOM</h2>
+            </div>
+            <div class="list multiple-items">
+                <div class="itemImg">
+                    <img src="./img/new1-1.png" alt="">
+                    <div class="content">
+                        <h4>BÀN PHÍM CƠ</h4>
+                        <h3>BÀN PHÍM CUSTOM GAS67</h3>
+                        <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <img src="./img/new2-1.png" alt="">
+                    <div class="content">
+                        <h4>COMBO</h4>
+                        <h3>[PRE-ORDER]BÀN PHÍM CƠ</h3>
+                        <P class="btn js-buy-ticket">2.199.000&#8363 <del>2.390.000&#8363</del></p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <img src="./img/new3-1.png" alt="">
+                    <div class="content">
+                        <h4>KIT</h4>
+                        <h3>BỘ KIT TÙY CHỈNH</h3>
+                        <P class="btn js-buy-ticket">1.370.000&#8363 <del>1.390.000&#8363</del></p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <a href=""><img src="./img/new4-1.png" alt=""></a>
+                    <div class="content">
+                        <h4>BÀN PHÍM CUSTOM</h4>
+                        <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
+                        <P class="btn js-buy-ticket">2.399.000&#8363</p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <a href=""><img src="./img/new4-1.png" alt=""></a>
+                    <div class="content">
+                        <h4>BÀN PHÍM CUSTOM</h4>
+                        <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
+                        <P class="btn js-buy-ticket">2.399.000&#8363</p>
+                    </div>
+                </div>
+                <div class="itemImg">
+                    <a href=""><img src="./img/new4-1.png" alt=""></a>
+                    <div class="content">
+                        <h4>BÀN PHÍM CUSTOM</h4>
+                        <h3>[PRE-ORDER]BÀN PHÍM VN66</h3>
+                        <P class="btn js-buy-ticket">2.399.000&#8363</p>
+                    </div>
+                </div>
+            </div>
+            <div class="showItemNew">
+                <div class="showAllNew">
+                    <p>XEM TẤT CẢ . BÀN PHÍM CUSTOM</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1
+        });
+    </script>
 
 </body>
 
